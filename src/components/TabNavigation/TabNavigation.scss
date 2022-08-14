@@ -1,0 +1,27 @@
+.tab-navigation {
+  display: flex;
+  .active {
+    background-color: $primary!important;
+  }
+  .tab-item {
+    color: $background-10;
+    background-color: $tertiary-20;
+    padding: 11px 45px;
+    font-weight: 700;
+    cursor: pointer;
+    &:first-child {
+      border-radius: 10px 0 0 10px;
+    }
+    &:last-child {
+      border-radius: 0 10px 10px 0;
+    }
+  }
+}
+@media screen and (max-width: 1240px) {
+  .tab-navigation {
+    .tab-item {
+      width: 50%;
+      text-align: center;
+    }
+  }
+}

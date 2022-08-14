@@ -1,0 +1,28 @@
+.desctop-navigation-container {
+  max-width: 1240px;
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  padding: 20px 0;
+  margin: 0px auto;
+  img {
+    max-width: 120px;
+    width: 100%;
+    cursor: pointer;
+  }
+  .container-items {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    a {
+      text-decoration: none;
+      outline: none;
+      color: $tertiary-20;
+    }
+    .router-link-active.router-link-exact-active {
+      font-weight: 700;
+      color: $primary-20;
+    }
+  }
+}

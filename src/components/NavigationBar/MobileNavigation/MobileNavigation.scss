@@ -1,0 +1,26 @@
+.mobile-navigation-container {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  justify-content: space-around;
+  a {
+    height: 24px;
+    width: 24px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .home {
+    background-image: url('../../../assets/images/ic_mobile_navigarion_home@3x.png');
+  }
+  .about {
+    background-image: url('../../../assets/images/ic_mobile_navigarion_info@3x.png');
+  }
+  .home.router-link-active.router-link-exact-active {
+    background-image: url('../../../assets/images/ic_mobile_navigarion_home_active@3x.png');
+  }
+  .about.router-link-active.router-link-exact-active {
+    background-image: url('../../../assets/images/ic_mobile_navigarion_info_active@3x.png');
+  }
+}

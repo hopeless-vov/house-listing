@@ -1,0 +1,137 @@
+.fields-container__content {
+  display: grid;
+  gap: 20px;
+  .double-field-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+  }
+  .input-field {
+    display: grid;
+    gap: 10px;
+    .error-message {
+      font-family: 'Montserrat', sans-serif;
+      font-style: italic;
+      font-weight: 500;
+      color: $primary;
+      font-size: 14px;
+      display: none;
+    }
+  }
+  .image {
+    .image-wrapper {
+      position: relative;
+      display: grid;
+      align-items: center;
+      justify-self: start;
+      width: 100px;
+      height: 100px;
+      img {
+        position: absolute;
+        max-width: 30px;
+        width: 100%;
+        justify-self: center;
+      }
+      .hide-bg {
+        border: none!important;
+      }
+      .clear-image {
+        cursor: pointer;
+        position: absolute;
+        top: -8px;
+        right: -17px;
+        width: 35px;
+        height: 35px;
+      }
+      .image-preview-wrapper {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-radius: 10px;
+        display: block;
+        cursor: pointer;
+        background-size: cover;
+        background-position: center center;
+        border: 2px solid $tertiary-20;
+        border-style: dashed;
+        background-image: url('../../assets/images/ic_plus_grey@3x.png');
+      }
+      input {
+        display: none;
+      }
+    }
+  }
+  .disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  button {
+    background-color: #EB5440;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding: 10px 60px;
+    justify-self: end;
+    cursor: pointer;
+    text-transform: capitalize;
+  }
+  input:not(#additional):focus:placeholder-shown, textarea:focus:placeholder-shown {
+    border: 1px solid $primary;
+    &::placeholder {
+      color: $primary;
+    }
+  }
+  input:focus:placeholder-shown ~ .error-message, textarea:focus:placeholder-shown ~ .error-message {
+    display: block;
+  }
+  input, select, textarea {
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px 20px;
+    color: $secondary;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    resize: none;
+    &::placeholder {
+      color: $tertiary-20;
+    }
+  }
+  input, label {
+    display:block;
+  }
+  label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .fields-container__content {
+    gap: 25px;
+    .double-field-container {
+      gap: 15px;
+    }
+    .input-field {
+      gap: 10px;
+      .error-message {
+        font-size: 12px;
+      }
+    }
+    button {
+      padding: 10px 40px;
+      justify-self: inherit;
+    }
+    input, select, textarea {
+      font-size: 12px;
+      padding: 15px 10px;
+    }
+    label {
+      font-size: 12px;
+    }
+  }
+}

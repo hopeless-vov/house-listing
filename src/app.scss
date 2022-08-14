@@ -1,0 +1,24 @@
+.app {
+  display: grid;
+  .content {
+    min-height: 100vh;
+    height: 100%;
+    max-width: 1240px;
+    width: 100%;
+    margin: 0px auto;
+    align-items: start;
+  }
+}
+.isMobileDevice {
+  .content {
+    order: 1;
+  }
+  .navigation-bar {
+    order: 2;
+  }
+}
+.back-image {
+  background-size: cover;
+  background-position: center center;
+  background-image: url('./assets/images/img_background@3x.png');
+}

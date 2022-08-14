@@ -1,0 +1,48 @@
+.about-view {
+  padding: 30px 0px;
+  display: grid;
+  gap: 50px;
+  align-items: start;
+  h1 {
+    display: none;
+  }
+  .company-wrapper {
+    display: grid;
+    gap: 30px;
+    .logo {
+      display: flex;
+      gap: 50px;
+      align-items: center;
+      img {
+        max-width: 250px;
+        width: 100%;
+      }
+      .company-info {
+        display: grid;
+        a {
+          color: $hyperlink;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1240px) {
+  .about-view {
+    padding: 20px;
+    h1 {
+      display: block;
+      text-align: center;
+    }
+    .company-wrapper {
+      display: grid;
+      gap: 25px;
+      .logo {
+        gap: 25px;
+        img {
+          max-width: 115px;
+        }
+      }
+    }
+  }
+}

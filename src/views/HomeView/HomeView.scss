@@ -1,0 +1,145 @@
+.home-view {
+  padding: 50px 0;
+  display: grid;
+  gap: 35px;
+  .head-line {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    a {
+      background-color: $primary;
+      border-radius: 10px;
+      color: $tertiary-10;
+      text-decoration: none;
+      font-weight: 700;
+      display: flex;
+      gap: 10px;
+      color: $background-10;
+      align-items: center;
+      padding: 7px 20px;
+      .add-new-grey {
+        display: none;
+      }
+      img {
+        transition: 0.3s ease;
+        transform: rotate(0);
+        width: 17px;
+      }
+      &:hover {
+        img {
+          transition: 0.3s ease;
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+  .content {
+    display: grid;
+    gap: 30px;
+    align-content: start;
+    .filters {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      justify-content: space-between;
+      .search {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        max-width: 370px;
+        img {
+          position: absolute;
+          width: 15px;
+        }
+        .search-ico {
+          left: 15px;
+        }
+        .clear-search-ico {
+          right: 15px;
+          cursor: pointer;
+        }
+        input {
+          overflow: hidden;
+          border-radius: 10px;
+          border: none;
+          outline: none;
+          width: 100%;
+          background-color: $tertiary-10;
+          font-size: 14px;
+          font-family: 'Open Sans', sans-serif;
+          color: $secondary;
+          padding: 10px 50px;
+          &::placeholder {
+            color: $tertiary-20;
+          }
+        }
+      }
+    }
+    .results {
+      font-size: 18px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      color: $primary-20;
+    }
+    .houses-list {
+      display: grid;
+      gap: 15px;
+    }
+    .no-results {
+      display: grid;
+      justify-content: center;
+      margin-top: 90px;
+      gap: 30px;
+      text-align: center;
+      img {
+        max-width: 440px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .home-view {
+    padding: 15px 20px;
+    gap: 20px;
+    .head-line {
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      h1 {
+        justify-self: center;
+      }
+      a {
+        position: absolute;
+        padding: 0;
+        right: 0;
+        background-color: $background-20;
+        span {
+          display: none;
+        }
+        .add-new-grey {
+          display: block;
+        }
+        img {
+          display: none;
+        }
+      }
+    }
+    .content {
+      gap: 20px;
+      .filters {
+        display: grid;
+        justify-content: normal;
+        .search {
+          max-width: 100%;
+        }
+      }
+      .results {
+        font-size: 16px;
+      }
+    }
+  }
+}
