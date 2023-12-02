@@ -2,7 +2,7 @@
   <div class="about-view">
     <h1>About</h1>
     <div class="text-wrapper">
-      <h2>About DTT Real Estate</h2>
+      <h2>About Our Product</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatibus illum. Accusamus alias doloribus possimus in, ab nulla tempore cupiditate! Sapiente quidem tempora nihil pariatur quisquam aliquam alias nulla nostrum!
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatibus illum. Accusamus alias doloribus possimus in, ab nulla tempore cupiditate! Sapiente quidem tempora nihil pariatur quisquam aliquam alias nulla nostrum!
