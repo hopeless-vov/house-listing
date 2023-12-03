@@ -49,9 +49,7 @@ export default {
     bindValues () {
       if (this.formatedHouse) {
         this.house = this.formatedHouse
-        console.log('1', this.formatedHouse)
         if (this.formatedHouse?.previewImage) {
-          console.log('1', this.formatedHouse?.previewImage)
           this.previewImage = this.formatedHouse.previewImage
         }
       }

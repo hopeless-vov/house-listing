@@ -11,5 +11,16 @@
   </div>
 </template>
 
+<!-- <template>
+  <div class="tab-navigation">
+    <div
+      :class="{isActive && 'I am active !!!'}"
+      class="tab-item"
+      @click="setActiveTab(tab.value)">
+      <span>{{tab.text}}</span>
+    </div>
+  </div>
+</template> -->
+
 <script src="./TabNavigation.js"/>
 <style scoped src="./TabNavigation.scss" lang="scss"/>
